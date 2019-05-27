@@ -1,0 +1,2 @@
+module LossRunsRequiredsHelper
+end

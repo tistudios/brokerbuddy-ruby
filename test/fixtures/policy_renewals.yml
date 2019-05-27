@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  policy_number: MyString
+  date_quotes_recieved: 2019-05-27
+  loss_runs_required: one
+  renewal_date: 2019-05-27
+  underwriter: one
+  insurer: one
+
+two:
+  policy_number: MyString
+  date_quotes_recieved: 2019-05-27
+  loss_runs_required: two
+  renewal_date: 2019-05-27
+  underwriter: two
+  insurer: two

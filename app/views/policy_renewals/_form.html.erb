@@ -1,0 +1,47 @@
+<%= form_with(model: policy_renewal, local: true) do |form| %>
+  <% if policy_renewal.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(policy_renewal.errors.count, "error") %> prohibited this policy_renewal from being saved:</h2>
+
+      <ul>
+      <% policy_renewal.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :policy_number %>
+    <%= form.text_field :policy_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date_quotes_recieved %>
+    <%= form.date_select :date_quotes_recieved %>
+  </div>
+
+  <div class="field">
+    <%= form.label :loss_runs_required_id %>
+    <%= form.text_field :loss_runs_required_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :renewal_date %>
+    <%= form.date_select :renewal_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :underwriter_id %>
+    <%= form.text_field :underwriter_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :insurer_id %>
+    <%= form.text_field :insurer_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

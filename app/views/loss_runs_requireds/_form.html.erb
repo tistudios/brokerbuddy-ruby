@@ -1,0 +1,22 @@
+<%= form_with(model: loss_runs_required, local: true) do |form| %>
+  <% if loss_runs_required.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(loss_runs_required.errors.count, "error") %> prohibited this loss_runs_required from being saved:</h2>
+
+      <ul>
+      <% loss_runs_required.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.text_field :status %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

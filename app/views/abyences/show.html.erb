@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Policy client name:</strong>
+  <%= @abyence.policy_client_name %>
+</p>
+
+<p>
+  <strong>Policy renewal:</strong>
+  <%= @abyence.policy_renewal %>
+</p>
+
+<p>
+  <strong>Insurer:</strong>
+  <%= @abyence.insurer %>
+</p>
+
+<p>
+  <strong>Remind date:</strong>
+  <%= @abyence.remind_date %>
+</p>
+
+<p>
+  <strong>Reminder message:</strong>
+  <%= @abyence.reminder_message %>
+</p>
+
+<p>
+  <strong>Underwriter:</strong>
+  <%= @abyence.underwriter %>
+</p>
+
+<%= link_to 'Edit', edit_abyence_path(@abyence) %> |
+<%= link_to 'Back', abyences_path %>

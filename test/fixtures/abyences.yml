@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  policy_client_name: MyString
+  policy_renewal: one
+  insurer: one
+  remind_date: 2019-05-27
+  reminder_message: MyText
+  underwriter: one
+
+two:
+  policy_client_name: MyString
+  policy_renewal: two
+  insurer: two
+  remind_date: 2019-05-27
+  reminder_message: MyText
+  underwriter: two

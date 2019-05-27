@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Policy Renewals</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Policy number</th>
+      <th>Date quotes recieved</th>
+      <th>Loss runs required</th>
+      <th>Renewal date</th>
+      <th>Underwriter</th>
+      <th>Insurer</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @policy_renewals.each do |policy_renewal| %>
+      <tr>
+        <td><%= policy_renewal.policy_number %></td>
+        <td><%= policy_renewal.date_quotes_recieved %></td>
+        <td><%= policy_renewal.loss_runs_required %></td>
+        <td><%= policy_renewal.renewal_date %></td>
+        <td><%= policy_renewal.underwriter %></td>
+        <td><%= policy_renewal.insurer %></td>
+        <td><%= link_to 'Show', policy_renewal %></td>
+        <td><%= link_to 'Edit', edit_policy_renewal_path(policy_renewal) %></td>
+        <td><%= link_to 'Destroy', policy_renewal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Policy Renewal', new_policy_renewal_path %>

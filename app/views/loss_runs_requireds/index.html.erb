@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Loss Runs Requireds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Status</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @loss_runs_requireds.each do |loss_runs_required| %>
+      <tr>
+        <td><%= loss_runs_required.status %></td>
+        <td><%= link_to 'Show', loss_runs_required %></td>
+        <td><%= link_to 'Edit', edit_loss_runs_required_path(loss_runs_required) %></td>
+        <td><%= link_to 'Destroy', loss_runs_required, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Loss Runs Required', new_loss_runs_required_path %>

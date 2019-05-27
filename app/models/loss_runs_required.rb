@@ -1,0 +1,2 @@
+class LossRunsRequired < ApplicationRecord
+end
